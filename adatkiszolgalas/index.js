@@ -29,6 +29,20 @@ async function run(){
         res.status(200).json(pokeData);
     });
 
+    app.get('/catalog',(req,res)=>{
+        res.status(200).json(jsonCatalogData);
+    });
+
+    app.get('/catalog/regionid/:regionid',(req,res)=>{
+        //res.json({regionid:req.params.regionid});
+        const result=jsonCatalogData.filter(x=>x.RegionID==req.params.regionid);
+        if(result.length>0){
+            res.status(200).json(result);
+        } else {
+            res.status(404).json({message:"A keresett adat nem található!"});
+        }
+    });
+
 }
 
 run();
