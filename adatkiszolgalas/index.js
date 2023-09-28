@@ -37,10 +37,19 @@ async function run(){
         //res.json({regionid:req.params.regionid});
         const result=jsonCatalogData.filter(x=>x.RegionID==req.params.regionid);
         if(result.length>0){
-            res.status(200).json(result);
-        } else {
-            res.status(404).json({message:"A keresett adat nem található!"});
+            return res.status(200).json(result);
+        } 
+        
+        return res.status(404).json({message:"A keresett adat nem található!"});
+        
+    });
+
+    app.get('/pokedata/name/:name',(req,res)=>{
+        const result=pokeData.pokemon.filter(x=>x.name.toLowerCase()==req.params.name.toLowerCase());
+        if(result.length>0){
+            return res.status(200).json(result);
         }
+        return res.status(404).json({message:"A keresett név nem található!"});
     });
 
 }
