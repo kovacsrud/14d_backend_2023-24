@@ -1,7 +1,7 @@
 const express=require("express");
 const cors=require("cors");
 const sqlite3=require("sqlite3");
-const {allAuto}=require('./dbrepo');
+const {allAuto,insertAdat,updateAdat,deleteAdat}=require('./dbrepo');
 const db=new sqlite3.Database('./autok.db');
 
 const app=express();
@@ -49,4 +49,17 @@ app.get('/allcars3',async (req,res)=>{
     }
     
 
+});
+
+app.post('/ujauto',(req,res)=>{
+    
+    insertAdat(db,req.body).then(res=>res.json()).catch(err=>res.send(err));
+});
+
+app.patch('/updateauto',(req,res)=>{
+    updateAdat(db,req.body).then(res=>res.json()).catch(err=>res.send(err));
+});
+
+app.delete('/deleteauto',(req,res)=>{
+    deleteAdat(db,req.body).then(res=>res.json()).catch(err=>res.send(err));
 });
