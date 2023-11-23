@@ -1,66 +1,66 @@
 {
   "tanulok": [
     {
-      "id": 1,
-      "vezeteknev": "Létai",
-      "keresztnev": "Aranka",
-      "kor": 15,
-      "om_azonosito": "112234899786",
-      "szuletesi_hely": "Orosháza",
-      "email": "aranka@suli.hu"
-    },
-    {
-      "id": 2,
-      "vezeteknev": "Lovász",
+      "vezeteknev": "Nagy",
       "keresztnev": "Elek",
-      "kor": 16,
-      "om_azonosito": "116694899786",
-      "szuletesi_hely": "Gyula",
-      "email": "gyula@suli.hu"
-    },
-    {
-      "id": 3,
-      "vezeteknev": "Epres",
-      "keresztnev": "Jolán",
-      "kor": 17,
-      "om_azonosito": "732234899786",
-      "szuletesi_hely": "Szeged",
-      "email": "jolan@suli.hu"
-    },
-    {
-      "vezeteknev": "Zsiga",
-      "keresztnev": "Ella",
-      "kor": "19",
-      "om_azonosito": "112233445566",
+      "kor": "16",
+      "om_azonosito": "1223434222333",
       "szuletesi_hely": "Békéscsaba",
-      "email": "ella@suli.hu",
+      "email": "elek@suli.hu",
+      "id": 1
+    },
+    {
+      "vezeteknev": "Pál",
+      "keresztnev": "János",
+      "kor": "17",
+      "om_azonosito": "32626345234524",
+      "szuletesi_hely": "Gyula",
+      "email": "janos@suli.hu",
+      "id": 2
+    },
+    {
+      "vezeteknev": "Nagy",
+      "keresztnev": "Krisztina",
+      "kor": "18",
+      "om_azonosito": "55457376765",
+      "szuletesi_hely": "Vésztő",
+      "email": "krisztina@suli.hu",
+      "id": 3
+    },
+    {
+      "vezeteknev": "Muhari",
+      "keresztnev": "Géza",
+      "kor": "14",
+      "om_azonosito": "54665665",
+      "szuletesi_hely": "Gerendás",
+      "email": "geza@suli.hu",
       "id": 4
     },
     {
-      "vezeteknev": "Dózsa",
-      "keresztnev": "Iván",
-      "kor": "21",
-      "om_azonosito": "23456789",
-      "szuletesi_hely": "Doboz",
-      "email": "ivan@suli.hu",
+      "vezeteknev": "teszt",
+      "keresztnev": "teszt",
+      "kor": "13",
+      "om_azonosito": "22222222",
+      "szuletesi_hely": "teszt",
+      "email": "teszt",
       "id": 5
     },
     {
-      "vezeteknev": "Gál",
-      "keresztnev": "Edit",
-      "kor": "18",
-      "om_azonosito": "45678912",
-      "szuletesi_hely": "Bélmegyer",
-      "email": "edit@suli.hu",
+      "vezeteknev": "Kriszta",
+      "keresztnev": "Kriszta",
+      "kor": "16",
+      "om_azonosito": "3333333333",
+      "szuletesi_hely": "Gyula",
+      "email": "krisztina@suli.hu",
       "id": 6
     },
     {
-      "vezeteknev": "Kovács",
-      "keresztnev": "Dániel",
-      "kor": "16",
-      "om_azonosito": "234244563645",
-      "szuletesi_hely": "Békéscsaba",
-      "email": "dani@suli.hu",
+      "vezeteknev": "test2",
+      "keresztnev": "test2",
+      "kor": "18",
+      "om_azonosito": "66666666666",
+      "szuletesi_hely": "test2",
+      "email": "test2",
       "id": 7
     }
   ]
