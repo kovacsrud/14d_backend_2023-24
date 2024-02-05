@@ -17,7 +17,7 @@ const fileUpload=asyncHandler(async (req,res)=>{
             fs.mkdir(path+req.user.username,err=>{console.log(err)});
         }
         for(prop in req.files){
-            const image=await Image.findOne({imageName:req.files[prop].name});
+            const image=await Image.findOne({userid:req.user._id,imageName:req.files[prop].name});
             if(image){
                 throw new Error(req.files[prop].name+" kép már lett feltöltve!");
             }

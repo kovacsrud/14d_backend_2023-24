@@ -18,7 +18,10 @@ const getImages=asyncHandler(async (req,res)=>{
 
 const deleteImage=asyncHandler(async (req,res)=>{
     const {imageId}=req.body;
+    
     const image=await Image.findById(imageId);
+    
+    
     if(!image){
         throw new Error("A kép nem törölhető!");
     } else {
@@ -26,7 +29,9 @@ const deleteImage=asyncHandler(async (req,res)=>{
 
         if(fs.existsSync(path+image.imageName)){
             try {
-                await Image.findOneAndRemove({userid:req.user._id,_id:imageId});
+                
+                console.log(path+image.imageName);
+                await Image.findOneAndDelete({userid:req.user._id,_id:imageId});
                 await fs.rm(path+image.imageName,()=>{console.log("Törlés:"+imageId)});
                 res.json({message:"Fájl törlése"});
                 
